@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
+  margin: 8px;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -17,6 +17,16 @@ h1 {
   font-size: 50px;
   font-family: Audiowide;
   text-align: center;
+}
+#mainHeading {
+  color: red;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10%;
+}
+.funParagraph {
+  color: green;
 }
 
 .navbar {
