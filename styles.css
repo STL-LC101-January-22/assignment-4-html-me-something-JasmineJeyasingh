@@ -1,1 +1,220 @@
 /* Write your CSS here! */
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20;
+  padding: 0px;
+  font-size: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 8px;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  padding-bottom: 58%;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 50px;
+  font-family: Audiowide;
+  text-align: center;
+}
+#mainHeading {
+  color: red;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10%;
+}
+.funParagraph {
+  color: green;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #d4d7de;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+a {
+  margin: 15px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+}
+.banner-area {
+  position: relative;
+  background-image: url(images/bird14.jpg);
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+  background-color: #fefefe;
+}
+.text-part {
+  width: 65%;
+  height: 80%;
+}
+
+.text-part p {
+  font-size: 20px;
+  line-height: 50px;
+  margin: 10;
+  padding: 50px;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  width: 40%;
+  float: left;
+  padding: 50px;
+  margin-left: 7%;
+}
+.column img {
+  max-height: 400px;
+  max-width: 900px;
+}
+.flower-section .flower-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+#gladiolus {
+  margin-left: 10%;
+  padding: 40px;
+}
+#gladiolus h1 {
+  margin-top: 7%;
+  text-align: left;
+}
+table {
+  width: 600px;
+}
+.zinnia-table table {
+  margin-left: 15%;
+}
+.dahlia-table table {
+  margin-left: 15%;
+}
+.content-container h5 {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+.section-container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.section-container .columns {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.section-container .columns.image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 400px;
+  max-height: 600px;
+  margin-top: 10%;
+}
+.section-container .columns.content .content-container {
+  margin-top: 17%;
+  padding: 40px 50px;
+}
+.section-container .columns.content .content-container h5 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.section-container .columns.content .content-container p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.btn {
+  color: rgb(199, 3, 3);
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+footer {
+  padding: 10px;
+  bottom: 0%;
+  width: 100%;
+  color: black;
+  background-color: #d4d7de;
+  text-align: center;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  .section-container {
+    flex-flow: row wrap;
+  }
+  .section-container .columns.image {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+  .section-container .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+  .section-container .columns.content .content-container {
+    padding: 20px 35px;
+  }
+  .section-container .columns.content .content-container h5 {
+    margin-bottom: 5px;
+  }
+}
